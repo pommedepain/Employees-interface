@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	--font: 'Work Sans', sans-serif;
+	--bg-color: #EFEEEE;
+	--box-shadow-light: #ffffff87;
+	--box-shadow-dark: #e6e4e4;
+	--black: #161615;
+	--blue: #61C4F3;
+	--purple: #6A74B5;
+	--purple-dark: #474e7b;
+	--purple-light: #a1acec;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #EFEEEE;
+}
+
+.layout {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Header */
+header {
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--bg-color);
+	box-shadow: 4px 9px 5px var(--box-shadow-dark), 
+       				-6px -6px 10px var(--box-shadow-light);
+	border-radius: 0px 0px 30px 30px;
+}
+.stackadoc {
+	width: 15%;
+	margin-left: 2%;
+}
+.title {
+	margin: 0;
+	font-family: var(--font);
+	font-size: 2vw;
+	font-weight: 300;
+	color: var(--black);
+	position: relative;
+	left: 25%;
+	top: 10%;
+}
+
+
+/* Layout with the employees */
+.container {
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+	display: block;
+	padding-top: 2%;
+}
+.line {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 2%;
+}
+.employee-ctn {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 30vw;
+	height: 25vh;
+	padding: 1%;
+	background-color: var(--bg-color);
+	box-shadow:  7px 7px 5px var(--box-shadow-dark), 
+							-7px -7px 6px var(--box-shadow-light);
+	border-radius: 30px;
+}
+.left {
+	width: 40%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.profil-pic {
+	height: 13vh;
+	width: 13vh;
+	border-radius: 50%;
+	background-color: var(--purple);
+	box-shadow: inset 5px 5px 9px var(--purple-dark), 
+            		inset -5px -5px 9px var(--purple-light);
+}
+.right {
+	position: relative;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.name {
+	margin: 0;
+	margin-left: 5%;
+	font-family: var(--font);
+	font-size: 2vw;
+	font-weight: 400;
+	color: var(--black);
+	position: relative;
+	top: -5%;
+}
+.age {
+	margin: 0;
+	margin-left: 5%;
+	font-family: var(--font);
+	font-size: 1.2vw;
+	font-weight: 200;
+	color: var(--black);
+	position: relative;
+	top: -5%;
+}
+.salary {
+	margin: 0;
+	font-family: var(--font);
+	font-size: 1.5vw;
+	font-weight: 400;
+	color: var(--purple);
+	position: absolute;
+	right: 1%;
+	bottom: 1%;
+}
